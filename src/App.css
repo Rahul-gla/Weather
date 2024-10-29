@@ -1,0 +1,64 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right,rgb(196, 117, 117),rgb(104, 104, 235));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.App{
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgb(223, 187, 187);
+  box-shadow: 0 4px 8px rgb(13, 13, 14);
+}
+
+h1{
+  margin-bottom: 20px;
+  color: white;
+}
+
+.city-input{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.city-input input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.city-input button{
+  padding: 10px 20px;
+  background-color: rgb(66, 66, 224);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.city-input button:hover{
+  background-color: rgb(38, 38, 235);
+}
+
+
+.Weather-display{
+  animation: FadeIn 0.5s;
+}
+
+@keyframe fadeIn {
+  From{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
